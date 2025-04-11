@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sean Equipaje</title>
+    <title>Sean Equiapaje</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" type="text/css" href="css/core.css">
-    <link rel="stylesheet" type="text/css" href="css/animsition.min.css">
-    <link rel="stylesheet" type="text/css" href="css/elements.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link rel="icon" type="image/png" href="favicon.png?version=v1.0">
+    <link rel="stylesheet" type="text/css" href="../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../template/favicon.png?version=v1.0">
   </head>
   <body>
     <div id="wrapper" class="animsition">
@@ -21,6 +21,7 @@
                 <div class="inner"></div>
               </div>
             </div>
+            <div class="img-count"><span class="loaded"></span><span class="description">images loaded</span></div>
           </div>
         </section>
       </div>
@@ -34,12 +35,34 @@
                 <div class="bar"></div>
               </div>
               <ul class="nav-links">
-                <li class="col-2 brand"><a href="index.html"><img alt="Equipaje Art" src="images/logo.svg" class="default"></a></li>
-                <li class="col-1 col-offset-1"><a href="Project.html" class="nav-link undefined">Projects</a>
+                <li class="col-1 brand"><a href="index.html"><img alt="Peel" src="../template/images/logo.svg" class="default"></a></li>
+                <li class="col-1 col-offset-1"><a href="pages/get-started.html" class="active nav-link undefined">Get started</a>
+                  <ul class="dropdown">
+                    <li><a href="index.html" class="nav-link undefined">Home</a>
+                    </li>
+                    <li><a href="pages/get-started.html" class="active nav-link undefined">Get started</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="col-1 col-offset-1"><a href="profile.html" class="nav-link undefined">Profile</a>
+                <li class="col-1 col-offset-1"><a href="pages/template-structure.html" class="nav-link undefined">Structure</a>
+                  <ul class="dropdown">
+                    <li><a href="pages/template-structure.html" class="nav-link undefined">Template structure</a>
+                    </li>
+                    <li><a href="pages/grid-structure.html" class="nav-link undefined">Grid</a>
+                    </li>
+                    <li><a href="pages/portfolio-structure.html" class="nav-link undefined">Portfolio</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="col-1 col-offset-1"><a href="contact.html" class="nav-link undefined">Contact</a>
+                <li class="col-1 col-offset-1"><a href="#" class="nav-link undefined">Modules</a>
+                  <ul class="dropdown">
+                    <li><a href="pages/tera-lightbox.html" class="nav-link undefined">Tera Lightbox</a>
+                    </li>
+                    <li><a href="pages/titan-slider.html" class="nav-link undefined">Titan Slider</a>
+                    </li>
+                    <li><a href="pages/contact-form.html" class="nav-link undefined">Contact form</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </nav>
@@ -47,137 +70,20 @@
         </div>
       </header>
       <div id="inner">
-        <section class="behind-header">
-          <div id="home-slider" class="titanSlider fh fw">
-            <ul class="slides">
-                            <li class="slide dark">
-                              <div class="hero fs">
-                                <div style="background-image: url(images/hero/06.jpg);" class="bg faded"></div>
-                                <div class="vcenter">
-                                  <div class="container">
-                                    <div class="grid">
-                                      <div class="col-1">Freelance</div>
-                                      <div class="col-7">
-                                        <a href="profile.html" class="project-link">
-                                          <div id="changingText">Graphic Designer</div>
-                                          <h1 class="stripe animatedText">Dare to Evolve</h1>
-                                        </a>
-                                        
-                                        <script>
-                                          const textList = [
-                                            "Graphic Artist",
-                                            "Photographer",
-                                            "Visual Artist",
-                                            "Motion Graphic Artist",
-                                            "Video Editor",
-                                            "Multimedia Designer",
-                                          ];
-                                        
-                                          let index = 0;
-                                          const textElement = document.getElementById("changingText");
-                                        
-                                          setInterval(() => {
-                                            index = (index + 1) % textList.length;
-                                            textElement.textContent = textList[index];
-                                          }, 1000);
-                                        </script>
-                                        <h2 class="label evolution-text">Design is more than style — it’s evolution.</h2>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="slide dark">
-                              <div class="hero fs">
-                                <div style="background-image: url(images/hero/07.jpg);" class="bg faded"></div>
-                                <div class="vcenter">
-                                  <div class="container">
-                                    <div class="grid">
-                                      <div class="col-1">2023</div>
-                                      <div class="col-7">
-                                        <div class="label">Branding | Logo Design </div><a href="AlayonDoy.html" class="project-link">
-                                          <h1 class="stripe animatedText">Alayon Doy</h1></a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="slide dark">
-                              <div class="hero fs">
-                                <div style="background-image: url(images/hero/08.jpg);" class="bg faded"></div>
-                                <div class="vcenter">
-                                  <div class="container">
-                                    <div class="grid">
-                                      <div class="col-1">2024</div>
-                                      <div class="col-7">
-                                        <div class="label">Social Media </div><a href="Repsol.html" class="project-link">
-                                          <h1 class="stripe animatedText">Repsol</h1></a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="slide dark">
-                              <div class="hero fs">
-                                <div style="background-image: url(images/projects/Terrafit-0.jpg);" class="bg faded"></div>
-                                <div class="vcenter">
-                                  <div class="container">
-                                    <div class="grid">
-                                      <div class="col-1">2023</div>
-                                      <div class="col-7">
-                                        <div class="label">Photo Manipulation | Visual Identity </div><a href="Terrafit.html" class="project-link">
-                                          <h1 class="stripe animatedText">Terrafit</h1></a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="slide dark">
-                              <div class="hero fs">
-                                <div style="background-image: url(images/hero/05.jpg);" class="bg faded"></div>
-                                <div class="vcenter">
-                                  <div class="container">
-                                    <div class="grid">
-                                      <div class="col-1">2023</div>
-                                      <div class="col-7">
-                                        <div class="label">Branding | Logo Design | Video Edit</div><a href="SLWD.html" class="project-link">
-                                          <h1 class="stripe animatedText">Simplifying Life with Diabetes</h1></a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="slide dark">
-                              <div class="hero fs">
-                                <div style="background-image: url(images/projects/Kopi-Daily.jpg);" class="bg faded"></div>
-                                <div class="vcenter">
-                                  <div class="container">
-                                    <div class="grid">
-                                      <div class="col-1">2024</div>
-                                      <div class="col-7">
-                                        <div class="label">Branding | Logo Design </div><a href="Kopi Daily.html" class="project-link">
-                                          <h1 class="stripe animatedText">Kopi Daily</h1></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>            
-            </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              <h1>Documentation</h1>
+              <h2>This will explain the key features of the Peel template. </h2>
+              <p>If you encounter bugs or need a customization job done, feel free to contact support via support@themanoid.com.</p><a href="pages/get-started.html">Get started</a>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
-    <script src="js/vendor.js"></script>
-    <script src="modules/titan-slider/titan-slider.js"></script>
-    <script src="modules/tera-lightbox/tera-lightbox.js"></script>
-    <script src="js/functions.js"></script>
-    <script>$('#home-slider').titanSlider();</script>
+    <script src="../template/js/vendor.js"></script>
+    <script src="../template/modules/titan-slider/titan-slider.js"></script>
+    <script src="../template/modules/tera-lightbox/tera-lightbox.js"></script>
+    <script src="../template/js/functions.js"></script>
   </body>
 </html>
